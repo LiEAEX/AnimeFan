@@ -81,17 +81,17 @@
 <div class="container-fluid bg-2 text-center">
   <h3 class="margin">Anime Information</h3>
   <?php 
-    #连接数据库
-    $conn = new mysqli("127.0.0.1", "root", "liqifan6", "anime");
     
+    $conn = new mysqli("127.0.0.1", "root", "******", "anime");
+    //connect the database
     if(!$conn){
         echo 'can not connect: ' . mysql_error();
-    }//链接数据库
+    }
     
-    //准备sql语句
+    //query the database
     $sql = "select * from anime_information";
     
-    //发送sql语句
+    //send sql 
     $obj = $conn->query($sql);
     
     echo "<center>";
@@ -115,7 +115,7 @@
     
     echo "<center>";
     
-    //关闭连接
+    //close the connection
     $conn->close();
   ?>
   <p></p>
