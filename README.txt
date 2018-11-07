@@ -1,5 +1,4 @@
-Since there are some issues while connecting to tamu sever, 
-this program will be run on my local machine. 
+This is a database simple demo. 
 
 Please follow the steps below:
 1, turn on the Appache Sever and MySQL Sever
