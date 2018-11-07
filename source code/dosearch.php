@@ -65,7 +65,7 @@
     $id = $_GET['id'];
 
     
-    $conn = new mysqli("127.0.0.1", "root", "liqifan6", "anime");
+    $conn = new mysqli("127.0.0.1", "root", "******", "anime");
     
     if(!$conn){
         echo 'can not connect: ' . mysql_error();
